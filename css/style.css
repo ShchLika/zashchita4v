@@ -262,13 +262,14 @@ a {
 }
 
 picture {
-    @media (max-width: 375px) {
-        height: 100px !important;
-    }
+
     @media (max-width: 640px) {
         height: 160px;
     }
     @media (max-width: 1920px) {
         height: 160px;
+    }
+    @media (max-width: 375px) {
+        height: 100px !important;
     }
 }
