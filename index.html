@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<base href="./">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Доставочка</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css" >
+	<link rel="icon" type="image/png" href="img/icon.png"/>
+</head>
+<body>
+	<div class="wrapper"> <!--внешняя обёртка -->
+		<header class="header">	</header>
+		<main class="main"> 
+			<div class="container"> 
+				<div class="text_in1"> 
+					<h1>Оперативная доставка в любую точку мира</h1> 
+				</div> 
+				<div class="take1"> 
+					<h2>Самовывоз из офиса компании</h2> 
+					<button type="button" class="image-button" data-target=".take1_in_1"> 
+						<img src="img/but.svg" alt="Кнопка" class="but_img" id="toggleImage"> 
+					</button>  
+					<div class="take1_in take1_in_1"> 
+						<p>Вы можете самостоятельно забрать свой заказ из офиса компании Premier по будням с 10:00 до 19:00 — бесплатно.</p> 
+						<p>Адрес: г. Казань, ул. Сибгата Хакима, 3, 1 этаж, офис 9</p> 
+						<p style="margin-top: 0rem;">Телефон:  <a href="tel:+79999999999">+7 999 999-99-99</a></p> 
+					</div> 
+				</div> 
+				<div class="take1"> 
+					<h2>Бесплатная доставка от 5000 рублей</h2> 
+					<button type="button" class="image-button" data-target=".take1_in_2"> 
+						<img src="img/but.svg" alt="Кнопка" class="but_img" id="toggleImage">  
+					</button>  
+					<div class="take1_in take1_in_2"> 
+						<p>Менеджер поможет оформить заказ и уточнит детали доставки.</p> 
+					</div> 
+				</div> 
+				<div class="take1"> 
+					<h2>Быстро передаем ваш заказ на доставку</h2> 
+					<button type="button" class="image-button" data-target=".take1_in_3"> 
+						<img src="img/but.svg" alt="Кнопка" class="but_img" id="toggleImage"> 
+					</button>  
+					<div class="take1_in take1_in_3"> 
+						<p>Мы знаем, как быстро вы хотите получить свой заказ, поэтому передаем его в транспортную компанию максимум на следующий день</p> 
+					</div> 
+				</div> 
+				<div class="take1"> 
+					<h2>Экспресс-доставка в день заказа</h2> 
+					<button type="button" class="image-button" data-target=".take1_in_4"> 
+						<img src="img/but.svg" alt="Кнопка" class="but_img" id="toggleImage"> 
+					</button>  
+					<div class="take1_in take1_in_4"> 
+						<p>От любой суммы, если заказ оформлен до 15:00</p> 
+					</div> 
+				</div> 
+				<div class="text_in2"> 
+					<h1>Широкий выбор транспортных компаний</h1> 
+				</div> 
+				<div> 
+					<form class="tktk" id="tkForm"> 
+						<input type="text" id="tkTitle" placeholder="Название ТК" required> 
+						<input type="file" id="tkImage" accept="image/*" required> 
+						<button type="submit">Добавить ТК</button> 
+					</form> 
+				</div>
+
+				<div class="tk" id="tkContainer">
+				    <picture>
+				        <source srcset="img/TKmail-small.svg" media="(max-width: 375px)" >
+				        <source srcset="img/TKmail-medium.svg" media="(max-width: 960px)">
+				        <img src="img/TKmail.svg" alt="Кнопка" class="img_tk">
+				    </picture>
+				    <picture>
+				        <source srcset="img/TKsdek-small.svg" media="(max-width: 375px)">
+				        <source srcset="img/TKsdek-medium.svg" media="(max-width: 960px)">
+				        <img src="img/TKsdek.svg" alt="Кнопка" class="img_tk">
+				    </picture>
+				    <picture>
+				        <source srcset="img/TKpony-small.svg" media="(max-width: 375px)">
+				        <source srcset="img/TKpony-medium.svg" media="(max-width: 960px)">
+				        <img src="img/TKpony.svg" alt="Кнопка" class="img_tk">
+				    </picture>
+				    <picture>
+				        <source srcset="img/TKbox-small.svg" media="(max-width: 375px)">
+				        <source srcset="img/TKbox-medium.svg" media="(max-width: 960px)">
+				        <img src="img/TKbox.svg" alt="Кнопка" class="img_tk">
+				    </picture>
+				</div>
+			</div> 
+		</main>
+
+		<footer class="footer">	</footer>
+	</div>
+	<script src="./main.js"></script>
+</body>
+</html>
